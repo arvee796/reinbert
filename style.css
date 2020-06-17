@@ -1,0 +1,148 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.video-background
+{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: 700px;
+	z-index: -1;
+	display: flex;
+
+}
+@media (min-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: 100%;
+		height: auto;
+		display: flex;
+		fill: all;
+	}
+}
+@media (max-aspect-ratio:16/9)
+{
+	.video-background
+	{
+		width: auto;
+		height: 700px;
+		display: flex;
+	}
+}
+.menu .nav
+		{
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction:row;
+			flex-wrap: wrap;
+			width: 100%
+			height:70px;
+			z-index: 1;
+			
+		}
+	.menu ul li
+		{
+
+			float: left;
+			width: 150px;
+			height: 50px;
+			background-color: white;
+			opacity: .5;
+			line-height: 40px;
+			text-align: center;
+			font-size: 15px;
+		}
+	.menu ul li a:hover
+		{
+			background-color: black;
+			color: white;
+		}
+	
+	.menu ul
+		{
+			margin:0px;
+			padding: 0px;
+			list-style: none;
+			text-align: center;
+		}
+	.menu ul li a
+		{
+			text-decoration: none;
+			color: black;
+			display: flex;
+		}
+	
+	.overlay 
+	{
+		
+		color: white;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		display: flex;
+
+
+	}
+	.overlay
+	{
+		position: absolute;
+		display: flex;
+
+	}
+	.overlay h1 h3
+	{
+		font-size: 25%;
+		display: flex;
+	}
+
+
+ h1
+{
+	font-size: 50px;
+}
+ p
+{
+	font-size: 25px;
+}
+ h2
+{
+	font-size: 50px;
+}
+footer
+{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: #fff;	
+	height: 40px;
+	opacity: .5;
+	
+}
+footer li
+{
+	color: #111;
+	list-style: none;
+}
+.main-content
+{
+	display: flex;
+}
+.main-content .box
+{
+	flex-basis: 100%;
+}
